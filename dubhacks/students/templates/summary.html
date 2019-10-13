@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}
+Summary
+{% endblock %}
+{% block body %}
+<div>
+    <form action="{% url 'getsummary' %" method="post">
+        <center>
+            <h1>Today's Summary</h1>
+            <label>How are you doing today? (from 1 to 5)</label>
+            <input type="number" min="1" max="5" name="rating"/>
+            <br />
+            <label>Brief description of today's work</label>
+            <br />
+            <textarea rows="10" cols="50" name="summary"></textarea>
+            <br />
+            <input type="submit" value="submit"/>
+        </center>
+    </form>
+</div>
+{% endblock %}

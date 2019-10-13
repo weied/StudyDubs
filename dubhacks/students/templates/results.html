@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}
+Results
+{% endblock %}
+{% block body %}
+<div>
+    <center>
+        <div style="background:purple; height:700px; padding:100px">
+            <h1 style="color:white">Results</h1>
+            <ul class="list-group">
+                {% for name in names %}
+                <li class="list-group-item" style="background:purple; color:white">{{ name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </center>
+</div>
+{% endblock %}

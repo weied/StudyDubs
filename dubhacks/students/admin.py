@@ -14,3 +14,4 @@ class QuestionAdmin(admin.ModelAdmin):
 
 admin.site.register(Option)
 admin.site.register(Question, QuestionAdmin)
+admin.site.register(Answer)
