@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}
+Survey
+{% endblock %}
+{% block body %}
+<div>
+    <h1>Survey</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+            <label>GPA</label>
+            <input type="number" step="0.01" name="gpa"/>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Morning</th>
+                    <th scope="col">Afternoon</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in days %}
+                <tr>
+                    <th scope="row">{{ i }}</th>
+                    <th scope="row"><input type="radio" name="{{ i }}1"/></th>
+                    <th scope="row"><input type="radio" name="{{ i }}2" /></th>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <h3>Study Habit</h3>
+            <br />
+            <label>Note-taking</label><input type="radio" name="Note-taking" /><br />
+            <label>Note-taking</label><input type="radio" name="Note-taking" /><br />
+            <label>Note-taking</label><input type="radio" name="Note-taking" /><br />
+            <label>Note-taking</label><input type="radio" name="Note-taking" /><br />
+            <label>Note-taking</label><input type="radio" name="Note-taking" /><br />
+        </div>
+    </form>
+</div>
+{% endblock %}
