@@ -1,0 +1,2 @@
+[12/Oct/2019 21:29:12] "POST /respond HTTP/1.1" 200 12
+{'gpa': '3.5', 'name': 'Ben', 'auditory': '3', 'kinect': '2', 'visual': '1', 'monday': '5am - 8am', 'tuesday': '5am - 8am', 'wednesday': '5am - 8am', 'thursday': '5am - 8am', 'friday': '5am - 8am', 'saturday': '5am - 8am', 'sunday': '5am - 8am', 'habits': 'Note-taking'}
